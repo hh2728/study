@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 public class BJ_S5_16395_파스칼의삼각형 {
 
-	static int N,k;
+	static int N, k;
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
