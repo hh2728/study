@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class BJ_S5_16395_파스칼의삼각형{
+public class BJ_S5_16395_파스칼의삼각형 {
 
 	static int N, k;
 
