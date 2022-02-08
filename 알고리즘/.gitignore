@@ -2,6 +2,8 @@
 
 /.settings/
 
-.classpath
+/.classpath
 
-.project
+/.project
+
+/.gitignore
