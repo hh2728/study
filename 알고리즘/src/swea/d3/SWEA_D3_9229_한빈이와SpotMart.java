@@ -40,7 +40,7 @@ public class SWEA_D3_9229_한빈이와SpotMart {
 
 	}
 	
-	public static void solve(int cnt, int idx) {
+	public static void solve(int cnt, int idx) {	//2번만 돌기
 		
 		if (cnt == 2) {
 			int max =0;
