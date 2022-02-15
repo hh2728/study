@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class JO_IC_1828_냉장고 {
+public class JO_IC_1828_냉장고{
 
 	static int N, num;
 
