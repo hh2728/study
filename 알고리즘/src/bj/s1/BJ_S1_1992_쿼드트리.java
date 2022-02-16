@@ -1,37 +1,33 @@
-package bj.s3;
+package bj.s1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BJ_S3_2630_색종이만들기 {
+public class BJ_S1_1992_쿼드트리 {
 
-	static int N, white, blue;
+	static int N;
 	static int[][] map;
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
+		String str;
 
 		N = Integer.parseInt(br.readLine());
 		map = new int[N][N];
 
 		for (int r = 0; r < N; r++) {
-			st = new StringTokenizer(br.readLine());
+			str = br.readLine();
 
 			for (int c = 0; c < N; c++) {
 
-				map[r][c] = Integer.parseInt(st.nextToken());
+				map[r][c] = str.charAt(c) - '0';
 			}
 		}
-		
-		white = 0;
-		blue = 0;
-		find(N, 0, 0);
 
-		System.out.println(white);
-		System.out.println(blue);
+		find(N, 0, 0);
 
 	}
 
@@ -39,18 +35,21 @@ public class BJ_S3_2630_색종이만들기 {
 
 		if (isOk(n, r, c)) {
 			if (map[r][c] == 0)
-				white++;
-			else
-				blue++;
+
+				System.out.print("0");
+			else if (map[r][c] == 1)
+				System.out.print("1");
 			return;
 		}
 
 		int nn = n / 2;
 
+		System.out.print("(");
 		find(nn, r, c);
 		find(nn, r, c + nn);
 		find(nn, r + nn, c);
 		find(nn, r + nn, c + nn);
+		System.out.print(")");
 
 	}
 
