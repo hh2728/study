@@ -10,7 +10,6 @@ public class SWEA_D3_2805_농작물수확하기 {
 	static int T,point;
 	static int N;
 	static int[][] map;
-	//static int[][] deltas = { { -1, 0 }, { 1, 0 }, { 0, -1 }, { 0, 1 }, { -1, -1 }, { -1, 1 }, { 1, -1 }, { 1, 1 } };
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
