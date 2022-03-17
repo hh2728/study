@@ -26,7 +26,6 @@ public class BJ_S1_2667_단지번호붙이기 {
 		visit = new boolean[N][N];
 
 		for (int r = 0; r < N; r++) {
-
 			String str = br.readLine();
 			for (int c = 0; c < N; c++) {
 				map[r][c] = str.charAt(c) - '0';
