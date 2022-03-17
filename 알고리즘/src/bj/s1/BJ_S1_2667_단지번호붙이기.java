@@ -41,6 +41,7 @@ public class BJ_S1_2667_단지번호붙이기 {
 				}
 			}
 		}
+		
 		Collections.sort(result);
 		System.out.println(result.size());
 		for(int i=0; i<result.size(); i++) {
