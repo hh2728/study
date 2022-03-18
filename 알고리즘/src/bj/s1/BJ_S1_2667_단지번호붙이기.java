@@ -70,6 +70,7 @@ public class BJ_S1_2667_단지번호붙이기 {
 			}
 		}
 	}
+	
 	static boolean isOk(int r, int c) {
 		return r>=0 && c>=0 && r<N && c<N;
 	}
