@@ -3,6 +3,7 @@ package bj.s1;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
 public class BJ_S1_10597_순열장난 {
 	
@@ -12,12 +13,31 @@ public class BJ_S1_10597_순열장난 {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		s = br.readLine();
-		len = s.length();
-		visit= new boolean[51];
-		dfs(0,0,"");
+		//s = br.readLine();
+		//len = s.length();
+		//visit= new boolean[51];
+		//dfs(0,0,"");
+		
+		StringTokenizer st;
+		s= "01/01 4 50000";
+		
+		st = new StringTokenizer(s);
+		
+		String t = st.nextToken();
+		
+		System.out.println(st.nextToken());
+		System.out.println(st.nextToken());
+
+		
+		st = new StringTokenizer(t,"/");
+		System.out.println(st.nextToken());
+		System.out.println(st.nextToken());
+		
+		
 
 	}
+	
+	
 	private static void dfs(int idx, int N, String ans) {
 		if(idx == len) {
 			for(int i =1; i<=N; i++) {
