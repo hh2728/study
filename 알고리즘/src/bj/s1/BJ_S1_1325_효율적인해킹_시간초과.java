@@ -54,8 +54,7 @@ public class BJ_S1_1325_효율적인해킹_시간초과 {
 	}
 
 	public static void dfs(int start) {
-		if (adj[start] == null)
-			return;
+
 
 		for (int j = 0; j < adj[start].size(); j++) {
 			if (!visit[adj[start].get(j)]) {
