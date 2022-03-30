@@ -3,6 +3,7 @@ package bj.g5;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class BJ_G5_12865_평범한배낭 {
@@ -34,8 +35,8 @@ public class BJ_G5_12865_평범한배낭 {
                 }
             }
         }
-		//for(int[] row : dp) {
-		//System.out.println(Arrays.toString(row));}
+		for(int[] row : dp) {
+		System.out.println(Arrays.toString(row));}
 		System.out.println(dp[N][K]);
 	}
 
