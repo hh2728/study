@@ -7,8 +7,8 @@ import java.util.StringTokenizer;
 
 public class BJ_S1_2527_직사각형 {
 
-	static int r1, c1, r2, c2;
-	static int r3, r4, c3, c4;
+	static int y1, x1, y2, x2;
+	static int y3, y4, x3, x4;
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -18,21 +18,22 @@ public class BJ_S1_2527_직사각형 {
 
 			st = new StringTokenizer(br.readLine());
 
-			c1 = Integer.parseInt(st.nextToken());
-			r1 = Integer.parseInt(st.nextToken());
-			c2 = Integer.parseInt(st.nextToken());
-			r2 = Integer.parseInt(st.nextToken());
+			x1 = Integer.parseInt(st.nextToken());
+			y1 = Integer.parseInt(st.nextToken());
+			x2 = Integer.parseInt(st.nextToken());
+			y2 = Integer.parseInt(st.nextToken());
 
-			c3 = Integer.parseInt(st.nextToken());
-			r3 = Integer.parseInt(st.nextToken());
-			c4 = Integer.parseInt(st.nextToken());
-			r4 = Integer.parseInt(st.nextToken());
+			x3 = Integer.parseInt(st.nextToken());
+			y3 = Integer.parseInt(st.nextToken());
+			x4 = Integer.parseInt(st.nextToken());
+			y4 = Integer.parseInt(st.nextToken());
 
-			if ((c2 == c3 && r2 != r3) || (c1 == c4 && r2 != r3) || (c2 != c3 && r1 == r4) || (c1 != c4 && r1 == r4)) {
-				System.out.println("b");
-			} else if ((c2 == c3 && r2 == r3) || (c1 == c4 && r2 == r3) || (c2 == c3 && r1 == r4)|| (c1 == c4 && r1 == r4)) {
+			if ((x2 == x3 && y2 == y3) || (x1 == x4 && y2 == y3) || (x2 == x3 && y1 == y4) || (x1 == x4 && y1 == y4)) {
 				System.out.println("c");
-			} else if (c2 < c3 || c4 < c1 || r2 < r3 || r4 < r1) {
+			} else if ((x2 == x3 && y2 != y3) || (x1 == x4 && y2 != y3) || (x2 != x3 && y1 == y4)
+					|| (x1 != x4 && y1 == y4)) {
+				System.out.println("b");
+			} else if (x2 < x3 || x4 < x1 || y2 < y3 || y4 < y1) {
 				System.out.println("d");
 			} else {
 				System.out.println("a");
