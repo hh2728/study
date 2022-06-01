@@ -21,7 +21,6 @@ public class BJ_S5_1181_단어정렬 {
 		}
 		
 		Arrays.sort(list, new Comparator<String>() {
-
 			@Override
 			public int compare(String o1, String o2) {
 				if(o1.length()==o2.length()) {			//글자수 비교
