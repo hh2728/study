@@ -73,13 +73,9 @@ public class BJ_G4_2530_시루의백화점구경 {
 				int nr = temp[0] + deltas[d][0];
 				int nc = temp[1] + deltas[d][1];
 
-				// 지도안에 없으면 빠이
-				if (!isOk(nr,nc)) {
-					continue;
-				}
-
+				// 지도안에 없으면 빠이	
 				// 시작점이거나 이미 갈 수 없는곳
-				if (map[nr][nc] == 4 || map[nr][nc] == 1) {
+				if (!isOk(nr,nc) || map[nr][nc] == 4 || map[nr][nc] == 1) {
 					continue;
 				}
 
