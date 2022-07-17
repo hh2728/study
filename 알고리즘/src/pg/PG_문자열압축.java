@@ -37,15 +37,14 @@ public class PG_문자열압축 {
             }
             
             if( i != cut.length()){
-                //System.out.println(ans+" cut:"+cut);
+                
                 ans += cut;
             }
 
             answer = Math.min(answer, ans.length());
         }
                
-       
-        //return answer;
+
 
 	}
 
