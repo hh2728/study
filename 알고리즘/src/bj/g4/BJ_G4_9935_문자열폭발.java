@@ -58,7 +58,7 @@ public class BJ_G4_9935_문자열폭발 {
 	}
 
 }
-
+/*
 public class BJ_G4_9935_문자열폭발 {
 
 	public static void main(String[] args) throws IOException {
@@ -120,3 +120,4 @@ public class BJ_G4_9935_문자열폭발 {
 	}
 
 }
+*/
