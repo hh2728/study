@@ -29,10 +29,6 @@ public class BJ_G3_11066_파일합치기 {
 
 	}
 
-	public static int MIN(int a, int b) {
-		return a <= b ? a : b;
-	}
-
 	public static int sum(int[] a, int s, int e) {
 		if (s == 0)
 			return a[e];
@@ -42,6 +38,7 @@ public class BJ_G3_11066_파일합치기 {
 
 	private static int solution(int[] a) {
 		int size = a.length;
+		
 		int DP[][] = new int[size][size]; // i~j까지 최소합 DP
 		int s[] = new int[size]; // SUM 저장
 
